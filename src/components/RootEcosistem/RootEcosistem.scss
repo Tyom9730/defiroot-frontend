@@ -1,0 +1,176 @@
+@import "../../assets/scss/_mixins.scss";
+@import "../../assets/scss/_variables.scss";
+
+.root-ecosistem-section {
+    display: grid;
+    grid-template-columns: 593px 1fr;
+    align-items: flex-start;
+    grid-gap: 95px;
+    padding: 195px 0 217px;
+    .total-supply-logo-section {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        > img {
+            width: 100%;
+            height: 100%;
+            max-width: 467px;
+            max-height: 471px;
+        }
+        > div {
+            &:first-child {
+                width: unset !important;
+                height: unset !important;
+                overflow: unset !important;
+                margin: unset !important;
+                > svg {
+                    width: 700px !important;
+                    height: 700px !important;
+                    transform: unset !important;
+                    @include lg {
+                        width: 500px !important;
+                        height: 500px !important;
+                    }
+                }
+                @include lg {
+                    top: -78px !important;
+                }
+            }
+            &.total-supply {
+                background-image: url("../../assets/images/total-supply.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                width: 467px;
+                height: 471px;
+                .title {
+                    display: flex;
+                    justify-content: center;
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 38px;
+                    line-height: 120%;
+                    text-align: center;
+                    background: linear-gradient(112.36deg, rgba(105, 64, 210, 0.82) 8.87%, rgba(66, 140, 238, 0.82) 90.48%), #100578;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    max-width: 265px;
+                    margin: 0 auto;
+                    padding-top: 58px;
+                }
+                @include lg {
+                    width: 348px;
+                    height: 340px;
+                }
+            }
+        }
+        // > div {
+        //     position: absolute;
+        //     height: 630px !important;
+        //     width: 630px !important;
+        //     @include md {
+        //       height: 470px !important;
+        //       width: 470px !important;
+        //     }
+        //     @include sm {
+        //       width: 100% !important;
+        //     }
+        //   }
+        
+    }
+    .root-ecosistem {
+        position: relative;
+        .title {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 60px;
+            line-height: 120%;
+            color: #100578;
+            margin-bottom: 30px;
+            > img {
+                vertical-align: sub;
+                @include md {
+                    display: none;
+                }
+            }
+            @include sm {
+                font-size: 45px;
+            }
+        }
+        .desc {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 130%;
+            color: $black;
+            max-width: 496px;
+            @include md {
+                font-weight: 450;
+                font-size: 18px;
+                line-height: 23px;
+            }
+        }
+        .face-mobile {
+            display: none;
+            float: right;
+            @include md {
+                display: block;
+            }
+        }
+        .circle {
+            position: absolute;
+            background: linear-gradient(112.36deg, #6940d2 8.87%, #428cee 90.48%);
+            &.circle-1 {
+                width: 59.51px;
+                height: 59.51px;
+                top: 250px;
+                right: -20px;
+                border-radius: 500px;
+                @include md {
+                    top: -45px;
+                    right: -10px;
+                    width: 27.1px;
+                    height: 27.1px;
+                }
+            }
+            &.circle-2 {
+                width: 34.77px;
+                height: 34.77px;
+                top: 330px;
+                right: 32px;
+                border-radius: 20px;
+                @include md {
+                    top: -12px;
+                    right: 33px;
+                    width: 15.83px;
+                    height: 15.83px;
+                }
+            }
+            &.circle-3 {
+                width: 21.81px;
+                height: 21.81px;
+                top: 400px;
+                right: -20px;
+                border-radius: 50%;
+                @include md {
+                    top: 26px;
+                    width: 9.93px;
+                    height: 9.93px;
+                    right: 0;
+                }
+            }
+        }
+    }
+    @include xl {
+        grid-gap: 0;
+    }
+    @include lg {
+        grid-template-columns: 400px 1fr;
+    }
+    @include md {
+        grid-template-columns: 1fr;
+        grid-gap: 83px;
+        padding: 78px 0 42px;
+    }
+}

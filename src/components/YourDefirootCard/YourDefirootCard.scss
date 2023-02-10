@@ -1,0 +1,111 @@
+@import "../../assets/scss/_mixins.scss";
+@import "../../assets/scss/_variables.scss";
+
+.buy-defiroot-card-section {
+  max-width: 981px;
+  margin: 46px auto;
+  .logo-mobile {
+    display: none;
+    @include md {
+      display: block;
+      padding: 0 20px;
+      width: 100%;
+    }
+  }
+  .title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 85px;
+    line-height: 98%;
+    letter-spacing: -0.005em;
+    color: $primary-color;
+    // max-width: 361px;
+    @include md {
+      font-weight: 900;
+      font-size: 62px;
+      line-height: 100%;
+    }
+  }
+  .details-and-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    align-items: flex-end;
+    .details-section {
+      // margin-top: 50px;
+      .order-btn {
+        background: linear-gradient(112.36deg, #6940d2 8.87%, #428cee 90.48%);
+        border-radius: 63px;
+        padding: 9.5px 21px;
+        color: #fff;
+        margin: 36px 0 48px;
+        min-width: unset;
+        border: none;
+        cursor: pointer;
+        @include md {
+          margin: 32px auto 48px;
+          display: block;
+          width: 100%;
+        }
+      }
+      .details {
+        margin-bottom: 50px;
+        > div {
+          display: flex;
+          align-items: center;
+          &:not(:last-child) {
+            margin-bottom: 36px;
+            @include md {
+              margin-bottom: 16px;
+            }
+          }
+          > div {
+            width: 10px;
+            height: 10px;
+            background: linear-gradient(
+              112.36deg,
+              #6940d2 8.87%,
+              #428cee 90.48%
+            );
+            border-radius: 63px;
+            margin-right: 12px;
+          }
+          > p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #07041f;
+            @include md {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 25px;
+            }
+          }
+        }
+      }
+    }
+    .card-image {
+      > img {
+        width: 100%;
+      }
+      @include md {
+        display: none;
+      }
+    }
+    @include md {
+      display: block;
+      width: 100%;
+    }
+  }
+  @include md {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+  }
+  @include md {
+    padding: 0;
+    margin: 48px 0 0;
+  }
+}

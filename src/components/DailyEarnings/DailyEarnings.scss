@@ -1,0 +1,206 @@
+@import "../../assets/scss/_mixins.scss";
+@import "../../assets/scss/_variables.scss";
+
+.daily-earnings-section {
+  margin: 175px 0 198px;
+  background: linear-gradient(96.54deg, #f3faff 6.17%, #eceffa 89.66%);
+  border-radius: 40px;
+  padding: 30px 0 98px;
+  position: relative;
+  .title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 85px;
+    line-height: 92%;
+    letter-spacing: -0.005em;
+    color: $primary-color;
+    text-align: center;
+    max-width: 990px;
+    margin: 0 auto;
+    @include md {
+      font-size: 62px;
+      text-align: left;
+      line-height: 100%;
+    }
+  }
+  .desc {
+    max-width: 658px;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: $black;
+    margin: 32px auto 64px;
+    @include md {
+      text-align: left;
+    }
+  }
+  .subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    color: $black;
+    text-align: center;
+    margin-bottom: 15px;
+    @include md {
+      text-align: left;
+    }
+  }
+  .coins {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    .based {
+      position: absolute;
+      bottom: -30px;
+      left: 20px;
+      font-style: normal;
+      font-weight: 450;
+      font-size: 14px;
+      line-height: 18px;
+      color: #07041F;
+    }
+    .coin {
+      padding: 36px 23.5px 32px;
+      background: #ffffff;
+      box-shadow: 0px 4px 15px rgba(245, 245, 244, 0.15), 0px -4px 15px rgba(196, 195, 192, 0.15);
+      border-radius: 80px;
+      text-align: center;
+      margin-right: 16px;
+      min-width: 125px;
+      .name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: $black;
+      }
+      .percent {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: $black;
+      }
+      > img {
+        width: 45px;
+        height: 44px;
+      } 
+      @include md {
+        min-width: 103px;
+      }
+    }
+    @include xl {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    @include lg {
+      margin-left: -15px;
+    }
+  }
+  .circle {
+    position: absolute;
+    background: linear-gradient(112.36deg, #6940d2 8.87%, #428cee 90.48%);
+    &.circle-1 {
+      width: 10px;
+      height: 10px;
+      top: 214px;
+      left: -26px;
+      border-radius: 3px;
+      @include xl {
+        left: 20px;
+      }
+      @include lg {
+        display: none;
+      }
+    }
+    &.circle-2 {
+      width: 36px;
+      height: 36px;
+      top: 167px;
+      left: -16px;
+      border-radius: 20px;
+      @include xl {
+        left: 36px;
+      }
+      @include lg {
+        display: none;
+      }
+    }
+    &.circle-3 {
+      width: 20px;
+      height: 20px;
+      top: 253px;
+      right: -41px;
+      border-radius: 8px;
+      @include xl {
+        right: 0;
+      }
+      @include lg {
+        top: -10px;
+        right: 26px;
+        border-radius: 8px;
+      }
+    }
+    &.circle-4 {
+      width: 36px;
+      height: 36px;
+      top: 284px;
+      right: 6px;
+      border-radius: 15px;
+      @include xl {
+        right: 16px;
+      }
+      @include lg {
+        top: 32px;
+        right: 5px;
+        border-radius: 48px;
+      }
+    }
+    &.circle-5 {
+      width: 66px;
+      height: 66px;
+      top: 233px;
+      right: 65px;
+      border-radius: 48px;
+      @include lg {
+        width: 26px;
+        height: 26px;
+        top: 0px;
+        right: -13px;
+        border-radius: 48px;
+      }
+    }
+    &.circle-6 {
+      width: 58px;
+      height: 58px;
+      top: 73px;
+      left: -49px;
+      border-radius: 40px;
+      @include xl {
+        left: 0;
+      }  
+      @include lg {
+        display: none;
+      }
+    }
+  } 
+  @include xl {
+    margin-bottom: 280px;
+  }
+  @include md {
+    padding: 90px 20px 98px;
+  }
+  @include sm {
+    margin-bottom: 480px;
+  }
+  @media(max-width: 416px) {
+    margin-bottom: 652px;
+  }
+}

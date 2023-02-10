@@ -1,0 +1,49 @@
+@import "../../assets/scss/_variables.scss";
+@import "../../assets/scss/mixins.scss";
+.how-it-works-section {
+  .title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 92%;
+    letter-spacing: -0.005em;
+    color: $white;
+    margin-bottom: 64px;
+  }
+  .work-variants {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    .variant {
+      background: #2f2f44;
+      border-radius: 20px;
+      padding: 17px 22px 40px;
+      &-index {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #8583ff;
+        margin-bottom: 56px;
+      }
+      .name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 35px;
+        color: #e8ebf1;
+        margin-bottom: 56px;
+      }
+      .desc {
+        font-style: normal;
+        font-weight: 450;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ccd0da;
+        padding-top: 30px;
+        border-top: 1px solid #6d707b;
+      }
+    }
+  }
+}

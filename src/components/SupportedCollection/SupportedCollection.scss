@@ -1,0 +1,116 @@
+@import "../../assets/scss/_variables.scss";
+@import "../../assets/scss/mixins.scss";
+.supported-collection-section {
+  position: relative;
+  margin-top: 400px;
+  margin-bottom: 327px;
+  .supported-collection {
+    border-radius: 25px;
+    max-width: 1056px;
+    margin: 0 auto;
+    padding: 98px 30px 87px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #77788a;
+    .blured-bg {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        linear-gradient(
+          112.36deg,
+          rgba(66, 140, 238, 0.36) 8.87%,
+          rgba(105, 64, 210, 0.05) 90.48%
+        );
+      backdrop-filter: blur(6px);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .title {
+      font-style: normal;
+      font-weight: 450;
+      font-size: 20px;
+      line-height: 92%;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: center;
+    }
+    .desc {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 109%;
+      text-align: center;
+      letter-spacing: -0.015em;
+      color: #ffffff;
+      margin-top: 21px;
+      margin-bottom: 65px;
+    }
+    > button {
+      display: block;
+      margin: 0 auto;
+      &.dark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > svg {
+          margin-left: 17px;
+        }
+      }
+    }
+  }
+  .absalute-img {
+    position: absolute;
+    z-index: -2;
+    &.img-1 {
+      transform: rotate(12.49deg);
+      height: 204px;
+      width: 289px;
+      left: 100px;
+      top: -150px;
+    }
+    &.img-2 {
+      transform: rotate(-21.7deg);
+      top: 96px;
+      width: 348.62px;
+      left: -100px;
+    }
+    &.img-3 {
+      transform: rotate(29.87deg);
+      bottom: -133px;
+      left: 157px;
+      height: 254px;
+      width: 215px;
+    }
+    &.img-4 {
+      transform: rotate(11.96deg);
+      right: 350px;
+      top: -58px;
+      width: 142.22px;
+      height: 166.9px;
+    }
+    &.img-5 {
+      transform: rotate(-11.67deg);
+      right: 19px;
+      top: -122px;
+      height: 209px;
+      width: 324px;
+    }
+    &.img-6 {
+      transform: rotate(19.73deg);
+      right: -60px;
+      top: 135px;
+      width: 277.99px;
+      height: 258.75px;
+    }
+    &.img-7 {
+      transform: rotate(-8.41deg);
+      right: 216px;
+      bottom: -100px;
+      width: 209.45px;
+      height: 235.16px;
+    }
+  }
+}

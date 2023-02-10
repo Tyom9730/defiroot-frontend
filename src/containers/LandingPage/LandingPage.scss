@@ -1,0 +1,17 @@
+@import "../../assets/scss/_mixins.scss";
+@import "../../assets/scss/_variables.scss";
+
+.lending-page-container {
+  position: relative;
+  padding: 195px 20px 160px;
+  overflow-x: hidden;
+  > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+  }
+  @include md {
+    padding: 140px 20px 115px;
+  }
+}

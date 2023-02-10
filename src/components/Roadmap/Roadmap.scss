@@ -1,0 +1,119 @@
+@import "../../assets/scss/_mixins.scss";
+@import "../../assets/scss/_variables.scss";
+
+.roadmap-section {
+  .title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 120%;
+    color: $primary-color;
+    text-align: center;
+    @include md {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 130%;
+    }
+  }
+  .roadmaps {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 40px;
+    justify-items: center;
+    > .line {
+      position: absolute;
+      width: 100%;
+      border-style: dashed;
+      top: 114px;
+      border-color:#160999;
+      opacity: 0.2;
+      @include md {
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 22px;
+        z-index: -1;
+      }
+    }
+    .roadmap {
+      @include md {
+        display: flex;
+        align-items: flex-start;
+      }
+      > img {
+        display: none;
+        margin-top: 23px;
+        @include md {
+          display: block;
+        }
+      }
+      > div {
+        position: relative;
+        padding-left: 20px;
+        box-shadow: 0px 4px 15px rgba(245, 245, 244, 0.15), 0px -4px 15px rgba(244, 244, 244, 0.5);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        > span {
+          background: #07041f;
+          border-radius: 100px;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 130%;
+          text-align: center;
+          color: #ffffff;
+          padding: 4px 8px;
+        }
+        > img {
+          margin: 27px 0;
+          margin-left: 14px;
+          background: white;
+          border-radius: 50%;
+          @include md {
+            display: none;
+          }
+        }
+        > ul {
+          margin-top: 20px;
+          > li {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: $black;
+            margin-bottom: 8px;
+            margin-left: 17px;
+            &::marker {
+              background: $black;
+              font-size: 20px;
+            }
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+        
+        @include md {
+          margin-bottom: 30px;
+          padding-left: 30px;
+         
+        }
+      }
+    }
+    @include xl {
+      grid-gap: 30px;
+    }
+    @include md {
+      grid-template-columns: 1fr;
+      justify-items: flex-start;
+    }
+  }
+  @include md {
+    margin-top: 64px;
+  }
+}

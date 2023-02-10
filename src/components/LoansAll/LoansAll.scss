@@ -1,0 +1,108 @@
+@import "../../assets/scss/_mixins.scss";
+@import "../../assets/scss/_variables.scss";
+
+.loans-all-section {
+  margin-top: 120px;
+  margin-left: -20px;
+  margin-right: -20px;
+  background: linear-gradient(318.44deg, #5278E6 -2.14%, rgba(82, 120, 230, 0) 30.53%), radial-gradient(26.04% 42.67% at 94.9% 52.84%, #5278E6 0%, rgba(82, 120, 230, 0) 100%), radial-gradient(49.96% 49.96% at 77.43% 100%, #5278E6 0%, rgba(82, 120, 230, 0) 100%), radial-gradient(30.62% 50.18% at -5.24% 27.78%, #5278E6 0%, rgba(82, 120, 230, 0) 100%), radial-gradient(51.87% 51.87% at 15.17% -8.98%, #5278E6 0%, rgba(82, 120, 230, 0) 100%), rgba(105, 64, 210, 0.94);
+  // background: linear-gradient(to right bottom, #428cee, #4180ec, #4674e9, #4674e9, #5a57dd, #5a57dd, #5a57dd, #5a57dd, #4674e9, #4674e9, #4180ec, #428cee);
+  padding-top: 87px;
+  .title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 85px;
+    line-height: 98%;
+    letter-spacing: -0.005em;
+    color: $white;
+    text-align: center;
+    max-width: 1038px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    @include md {
+      font-size: 62px;
+      line-height: 100%;
+      text-align: left;
+
+    }
+  }
+  .desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 130%;
+    text-align: center;
+    color: $white;
+    max-width: 790px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    @include md {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 130%;
+    }
+  }
+  .image-section {
+    
+    padding: 86px 0 120px;
+    .image-container {
+      position: relative;
+      max-width: 918px;
+      margin: 0 auto;
+      border-radius: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      grid-gap: 71px;
+      .mobiles {
+        width: 100%;
+      }
+      .visa {
+        position: absolute;
+        top: 332px;
+        left: 159px;
+      }
+      .tags-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .tag {
+          border-radius: 20px;
+          padding: 6px 21px;
+          margin-right: 8px;
+          margin-bottom: 16px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+          background: $white;
+          > span {
+            background: linear-gradient(112.36deg, #6940D2 8.87%, #428CEE 90.48%), #FFFFFF;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+          }
+          @include md {
+            padding: 6px 16px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+          }
+        }
+      }
+      @include md {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        grid-gap: 32px;
+      }
+    }
+    @include md {
+      padding: 64px 0;
+    }
+  }
+  @include md {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 50px 20px 50px;
+  }
+}

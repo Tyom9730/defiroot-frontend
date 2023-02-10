@@ -1,0 +1,163 @@
+@import "../../assets/scss/_mixins.scss";
+@import "../../assets/scss/_variables.scss";
+
+.token-sale-stages {
+  background: #ffffff;
+  border-radius: 40px;
+  padding: 64px 0 124px;
+  position: relative;
+  &-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 92%;
+    color: $primary-color;
+    margin-bottom: 73px;
+    margin-left: 86px;
+    letter-spacing: -0.005em;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    > svg {
+      margin-right: 20px;
+      width: 81px;
+      height: 89px;
+    }
+    @include md {
+      font-size: 62px;
+      line-height: 100%;    
+      flex-direction: column;
+      margin-left: 0;
+      align-items: flex-start;
+    }
+  }
+  &-content {
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    > div {
+      position: relative;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 1200px;
+      .parameters {
+        width: 50%;
+        margin-bottom: -16px;
+        .parameter {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+          > span {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            color: white;
+            background: linear-gradient(112.36deg, #6940d2 8.87%, #428cee 90.48%);
+            padding: 6px 21px;
+            border-radius: 20px;
+            z-index: 1;
+          }
+          > hr {
+            width: 80%;
+            border: 1px dashed #07041f;
+            opacity: 0.2;
+            position: absolute;
+            left: 30px;
+            z-index: 0;
+          }
+        }
+      }
+      > div {
+        &:not(:first-child) {
+          max-width: 270px;
+          max-height: 460px;
+          min-height: 450px;
+          background: #EDF1FB;
+          border-radius: 20px;
+          position: relative;
+          z-index: 1;
+          padding: 32px 35px 32px 35px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          &.ido-sale,
+          &.private-sale {
+            margin-left: 30px;
+          }
+          .subname {
+            display: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #07041F;
+            opacity: 0.5;
+            margin-bottom: 8px;
+          }
+          .subtitle {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            color: $black;
+            margin-bottom: 19px;
+            min-height: 60px;
+          }
+          .price {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 35px;
+            color: $black;
+            margin-bottom: 19px;
+            &.depend {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 115.1%;
+            }
+          }
+          .lockup {
+            font-style: normal;
+            font-weight: 450;
+            font-size: 14px;
+            line-height: 140%;
+            color: $black;
+            margin-bottom: 19px;
+          }
+          .join-action {
+            display: flex;
+            align-items: center;
+            > span {
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 22px;
+              letter-spacing: 0.01em;
+              text-transform: uppercase;
+              background: $primary-color;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+    }
+    &+ div {
+      position: absolute;
+      top: 0;
+      right: -30px;
+    }
+  }
+  @include md {
+    padding: 64px 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 0;
+  }
+}
